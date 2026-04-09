@@ -2,8 +2,8 @@ import './globals.css';
 import { ReactNode } from 'react';
 
 export const metadata = {
-  title: 'Your Name – Full-Stack Developer',
-  description: 'Portfolio of Your Name, a Full-Stack Developer building scalable web applications.',
+  title: 'Portfolio – Chris Tigga',
+  description: 'Portfolio of Chris Tigga, a Full-Stack Developer building scalable web applications.',
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {

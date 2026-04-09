@@ -31,7 +31,7 @@ export default function Hero() {
     <section className={styles.hero} id="home">
       <div className={styles.inner}>
         <p className={styles.greeting}>Hi there! I&apos;m</p>
-        <h1 className={styles.name}>Your Name</h1>
+        <h1 className={styles.name}>Chris Tigga</h1>
         <p className={styles.role}>
           <span>{displayed}</span>
           <span className={styles.cursor}>|</span>

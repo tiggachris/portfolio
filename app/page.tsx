@@ -32,7 +32,7 @@ export default function Home() {
         }}
       >
         Designed & built by{' '}
-        <span style={{ color: '#00d4c8' }}>Your Name</span> · {new Date().getFullYear()}
+        <span style={{ color: '#00d4c8' }}>Chris Tigga</span> · {new Date().getFullYear()}
       </footer>
     </>
   );

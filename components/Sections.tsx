@@ -19,46 +19,46 @@ const skills = [
 
 const experiences = [
   {
-    role: 'Senior Full-Stack Developer',
-    company: 'Acme Corp',
-    period: '2022 – Present',
-    desc: 'Led development of a microservices platform serving 500k+ users. Built real-time dashboards, optimised DB queries by 60%, and mentored junior engineers.',
+    role: 'Full-Stack Developer Intern',
+    company: 'UNLOX',
+    period: 'Sept 2025 – Feb 2026',
+    desc: 'I worked on a MERN stack–based internal dashboard, where I built and maintained features using MongoDB, Express.js, React, and Node.js. I developed role-based admin and mentor dashboards with secure authentication using JWT, ensuring controlled access to system functionalities. Additionally, I designed and integrated RESTful APIs to manage courses, mentors, batches, schedules, and system logs. The platform also included real-time and workflow-driven features such as class scheduling, cancellations, rescheduling, and activity logging, enhancing overall system efficiency and usability.',
   },
   {
-    role: 'Frontend Developer',
-    company: 'StartupXYZ',
-    period: '2020 – 2022',
-    desc: 'Built React + TypeScript SPA from scratch, integrated payment gateways, and shipped a design system used across 4 products.',
-  },
-  {
-    role: 'Junior Developer',
-    company: 'Digital Agency',
-    period: '2018 – 2020',
-    desc: 'Developed responsive websites for 30+ clients. Introduced automated testing, cutting regression bugs by 40%.',
+    role: 'Web Developer Intern',
+    company: 'Prodigy Infotech',
+    period: 'May 2024',
+    desc: 'I completed a series of web development tasks focused on building responsive and interactive user interfaces using HTML, CSS, and JavaScript. These tasks involved creating structured web pages, applying modern styling techniques, and implementing basic interactivity to enhance user experience. Through this hands-on practice, I strengthened my understanding of frontend development fundamentals, including layout design, responsiveness, and DOM manipulation.',
   },
 ];
 
 const projects = [
   {
-    tag: 'Full Stack',
-    title: 'E-Commerce Platform',
-    desc: 'Complete shopping platform with auth, cart, Stripe payments, and admin dashboard built with Next.js and Node.',
-    live: '#',
-    github: '#',
-  },
-  {
-    tag: 'AI / ML',
-    title: 'Chat with Docs',
-    desc: 'Upload any PDF and chat with it using an LLM. Built with Python, LangChain, and a Next.js frontend.',
-    live: '#',
-    github: '#',
+    tag: 'MERN Stack',
+    title: 'Esports Management System',
+    desc: 'A full-stack web application for managing esports tournaments, teams, and matches. Built with Node.js, Express, EJS, and MongoDB, it includes features like tournament creation, team management, match scheduling, real-time dashboards, and a dynamic homepage carousel. Supports secure authentication, session handling, and image uploads via Multer.',
+    github: 'https://github.com/tiggachris/esports-management-system',
   },
   {
     tag: 'Frontend',
-    title: 'Analytics Dashboard',
-    desc: 'Real-time data visualization dashboard with charts, filters, and role-based access control using React and D3.',
-    live: '#',
-    github: '#',
+    title: 'Personal Finance Dashboard',
+    desc: 'A modern, responsive personal finance dashboard built with React and TypeScript. Track expenses, manage budgets, and monitor financial goals—all in one intuitive interface.',
+    live: 'https://personal-finance-dashboard-sepia.vercel.app/',
+    github: 'https://github.com/tiggachris/Personal-Finance-Dashboard',
+  },
+  {
+    tag: 'Streamlit',
+    title: 'Library Manager',
+    desc: 'Built a web-based Library Management System using Python and Streamlit, providing an interactive interface to add, view, and manage books. The application demonstrates the ability to create dynamic web apps with real-time interaction and efficient data handling without traditional frontend technologies.',
+    live: 'https://library-manager-koz2dtu7gisbrrbzrftibe.streamlit.app/',
+    github: 'https://github.com/tiggachris/Library-Manager',
+  },
+  {
+    tag: 'UI/UX',
+    title: 'Talk To Your Notes',
+    desc: 'This project is a modern chat-based web application built using AI-generated UI components from v0 by Vercel, leveraging React and Next.js. It features an interactive chat interface with a clean and responsive design, demonstrating the ability to rapidly prototype and develop user interfaces using AI-assisted tools. The application highlights modern frontend practices, including component-based architecture, responsive layouts, and seamless user interaction.',
+    live: 'https://v0-new-chat-chi-jade.vercel.app/',
+    github: 'https://github.com/tiggachris/talk-to-your-notes',
   },
 ];
 
@@ -77,7 +77,7 @@ export function About() {
           to open-source projects, or sharing what I&apos;ve learned with the dev community.
         </p>
         <div className={styles.statGrid}>
-          {[['3+', 'Years Experience'], ['20+', 'Projects Built'], ['10+', 'Happy Clients'], ['5K+', 'GitHub Stars']].map(([n, l]) => (
+          {[['0.5+', 'Years Experience'], ['4+', 'Projects Built'], ['2', 'Internship'], ['8+', 'Collaboration']].map(([n, l]) => (
             <div key={l} className={styles.statCard}>
               <span className={styles.statNum}>{n}</span>
               <span className={styles.statLabel}>{l}</span>
@@ -144,7 +144,9 @@ export function Projects() {
             <h3 className={styles.projectTitle}>{p.title}</h3>
             <p className={styles.projectDesc}>{p.desc}</p>
             <div className={styles.projectLinks}>
-              <a href={p.live} className={styles.projectLink} target="_blank" rel="noreferrer">Live →</a>
+              {p.live &&
+                <a href={p.live} className={styles.projectLink} target="_blank" rel="noreferrer">Live →</a>
+              }
               <a href={p.github} className={styles.projectLink} target="_blank" rel="noreferrer">GitHub →</a>
             </div>
           </div>
@@ -165,11 +167,11 @@ export function Contact() {
           I&apos;m currently open to freelance projects and full-time opportunities.
           Feel free to reach out and let&apos;s build something great together.
         </p>
-        <a href="mailto:yourname@email.com" className={styles.emailBtn}>
+        <a href="mailto:tiggachris95@gmail.com" className={styles.emailBtn}>
           <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
             <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
           </svg>
-          yourname@email.com
+          tiggachris95@gmail.com
         </a>
         <div className={styles.contactSocials}>
           <a href="https://github.com/tiggachris" target="_blank" rel="noreferrer" className={styles.socialIcon} aria-label="GitHub">
